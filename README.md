@@ -39,6 +39,12 @@ python script_name.py
 
 Make sure to replace script_name.py with the actual name of the Python script.
 
+### Inputs
+
+The input to this takehome is the Anthem machine readable index file table of contents for May 2024
+https://antm-pt-prod-dataz-nogbd-nophi-us-east1.s3.amazonaws.com/anthem/2024-05-01_anthem_index.json.gz
+
+
 ### Outputs
 
 1. The script will output a CSV file named Anthem_NY_PPO.csv. This file contains the filtered records that are associated with NY PPO.
