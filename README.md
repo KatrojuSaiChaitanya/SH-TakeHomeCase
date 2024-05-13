@@ -1,6 +1,6 @@
 # Serif-Health-TakeHome-Sai
 
-Project Title: JSON to CSV Transformation and Data Filtering with Dask
+## Project Title: JSON to CSV Transformation and Data Filtering with Dask
 
 Description
 This project involves a Python script that initially utilizes jq to convert JSON data into a CSV format focusing on specific fields (description and location). Post this conversion, the script uses Dask, a powerful Python library for parallel data processing, to further transform, clean, and filter this data based on specific criteria (e.g., entries related to "New York" and "PPO"). The goal is to produce a filtered CSV file that highlights certain records from the initial dataset.
@@ -15,6 +15,8 @@ Prerequisites
 2. jq (Command-line JSON processor)
 3. Dask
 4. Pandas
+
+### Steps To Follow
 
 Setup
 Clone this repository or download the script to your local machine.
