@@ -18,28 +18,29 @@ Prerequisites
 
 ### Steps To Follow
 
-Setup
+1. Setup
 Clone this repository or download the script to your local machine.
 Install the required Python libraries using pip:
 
-In bash Run 
+2. In bash Run 
 pip install dask 
 pip install pandas
 
-Ensure jq is installed on your system. On most Unix-like systems, you can install it via your package manager. For example, on Ubuntu:
+3. Ensure jq is installed on your system. On most Unix-like systems, you can install it via your package manager. For example, on Ubuntu:
 
-In bash Run
+4. In bash Run
 sudo apt-get install jq
 
-Usage
+5. Usage
 To run the script, simply execute it from your command line:
 
-In bash Run
+6. In bash Run
 python script_name.py
 
 Make sure to replace script_name.py with the actual name of the Python script.
 
-Outputs
+### Outputs
+
 The script will output a CSV file named Anthem_NY_PPO.csv. This file contains the filtered records that are associated with NY PPO.
 
 Development and Performance
