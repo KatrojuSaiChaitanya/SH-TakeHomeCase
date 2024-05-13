@@ -11,10 +11,10 @@ Before running the script
 2. Ensure that you have Python installed on your system along with the following dependencies:
 
 Prerequisites
-Python 3.6 or later
-jq (Command-line JSON processor)
-Dask
-Pandas
+1. Python 3.6 or later
+2. jq (Command-line JSON processor)
+3. Dask
+4. Pandas
 
 Setup
 Clone this repository or download the script to your local machine.
