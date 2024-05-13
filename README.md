@@ -2,15 +2,15 @@
 
 ## Project Title: JSON to CSV Transformation and Data Filtering with Dask
 
-Description
+### Description
 This project involves a Python script that initially utilizes jq to convert JSON data into a CSV format focusing on specific fields (description and location). Post this conversion, the script uses Dask, a powerful Python library for parallel data processing, to further transform, clean, and filter this data based on specific criteria (e.g., entries related to "New York" and "PPO"). The goal is to produce a filtered CSV file that highlights certain records from the initial dataset.
 
-Installation
+### Installation
 Before running the script
 1. Ensure that you have your input Gzipped file
 2. Ensure that you have Python installed on your system along with the following dependencies:
 
-Prerequisites
+### Prerequisites
 1. Python 3.6 or later
 2. jq (Command-line JSON processor)
 3. Dask
@@ -41,18 +41,19 @@ Make sure to replace script_name.py with the actual name of the Python script.
 
 ### Outputs
 
-The script will output a CSV file named Anthem_NY_PPO.csv. This file contains the filtered records that are associated with NY PPO.
+1. The script will output a CSV file named Anthem_NY_PPO.csv. This file contains the filtered records that are associated with NY PPO.
 
-Development and Performance
+#### Development and Performance
 Development Time: The script took approximately 1.5 hour to write and test thoroughly.
 
-Execution Time: The typical run time of the script is around 10 minutes, depending on the size of the input JSON file and the processing capabilities of the machine.
+#### Execution Time: 
+The typical run time of the script is around 10 minutes, depending on the size of the input JSON file and the processing capabilities of the machine.
 
-Trade-offs and Decisions
+#### Trade-offs and Decisions
 1. Choice of Dask over Spark: Dask was chosen due to its simplicity and lower overhead compared to Spark, making it ideal for medium-sized datasets and simpler deployment.
 2. Use of jq for Initial Processing: Utilizing jq for the initial conversion from JSON to CSV offloads some data processing outside of Python, allowing for more efficient handling of large JSON files before loading them into Python.
 
-Future Improvements
+#### Future Improvements
 Error Handling: Enhance the script's robustness by adding more comprehensive error handling and logging.
 Scalability: Modify the script to Spark and scale the clusters efficiently to handle even larger datasets.
 User Interface: Implement a command-line interface (CLI) to provide users with more options for specifying input files and configuring output preferences.
