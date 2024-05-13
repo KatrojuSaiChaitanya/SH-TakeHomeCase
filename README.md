@@ -60,9 +60,10 @@ The typical run time of the script is around 10 minutes, depending on the size o
 2. Use of jq for Initial Processing: Utilizing jq for the initial conversion from JSON to CSV offloads some data processing outside of Python, allowing for more efficient handling of large JSON files before loading them into Python.
 
 #### Future Improvements
-Error Handling: Enhance the script's robustness by adding more comprehensive error handling and logging.
-Scalability: Modify the script to Spark and scale the clusters efficiently to handle even larger datasets.
-User Interface: Implement a command-line interface (CLI) to provide users with more options for specifying input files and configuring output preferences.
+
+1. Error Handling: Enhance the script's robustness by adding more comprehensive error handling and logging.
+2. Scalability: Modify the script to Spark and scale the clusters efficiently to handle even larger datasets.
+3. User Interface: Implement a command-line interface (CLI) to provide users with more options for specifying input files and configuring output preferences.
 
 
 This README file provides a comprehensive overview that guides users on how to setup, use, and understand the project, including detailing the choices made during development and potential areas for future improvements.
@@ -72,6 +73,7 @@ Note::: Since it is mentioned in the take home assessment that the program shoul
 
 
 There are several otherways by which we can do this:
-1. Using Spark
-2. Using ijson
-3. breaking the json file into smaller chunks and store in S3 and then process it
+1. Using Spark/Databricks
+2. Other Big Data Frameworks (Hadoop and Map Reduce)
+3. Using ijson
+4. breaking the json file into smaller chunks and store in S3 and then process it
